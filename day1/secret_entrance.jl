@@ -52,8 +52,8 @@ function secret_entrance(fn!::Function, input_file_name::String)::Int
 end
     
 function main()
-    println(dial(part1!, INPUT_FILE_NAME))
-    println(dial(part2!, INPUT_FILE_NAME))
+    println(secret_entrance(part1!, INPUT_FILE_NAME))
+    println(secret_entrance(part2!, INPUT_FILE_NAME))
 end
 
 if abspath(PROGRAM_FILE) == @__FILE__
