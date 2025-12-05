@@ -50,7 +50,7 @@ function forklift_roll_of_papers(grid::Vector{Vector{Char}}, target::Int)::Vecto
 end
 
 
-function printing_department2(input_file_name::String)
+function printing_department2(input_file_name::String)::Int
     grid = [collect(row) for row in readlines(input_file_name)]
     out = 0
 
@@ -67,7 +67,7 @@ function printing_department2(input_file_name::String)
 end
 
 
-function printing_department1(input_file_name::String)
+function printing_department1(input_file_name::String)::Int
     grid = [collect(row) for row in readlines(input_file_name)]
     return length(forklift_roll_of_papers(grid, 4))
 end
